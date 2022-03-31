@@ -1,0 +1,31 @@
+correct_orders = { 'O100' : 36002, 'O900':35000 , 'O120' : 3300,\
+                  'O200' : 25600, 'O300' : 36011,\
+                'O111' : 36009, 'O170' : 26000}
+high = 0    
+for k,v in correct_orders.items():
+    print (k,' ',v)
+    if v > high:
+        high = v
+        ord_no = k
+print ('order with highest value is ',high,' order no. is ',ord_no)        
+
+lst_keys = list(correct_orders.keys())      
+lst_values = list(correct_orders.values()) 
+print (lst_keys)
+print (lst_values)
+h  = max(lst_values)
+print ('h is ',h) 
+pos = lst_values.index(h)
+print ('position ',pos) 
+print ('VIA LIST order with highest value is ',h,' order no. is ',lst_keys[pos])    
+print()
+high = max(lst_values) 
+list_of_high_values=[]  
+for k,v in correct_orders.items():
+    #print (k,' ',v)
+    if v == high:        
+        ord_no = k
+        list_of_high_values.append((ord_no,high))
+print ('high value listing ....')
+for i in list_of_high_values:
+    print (i[0],' ',i[1])

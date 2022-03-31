@@ -1,0 +1,18 @@
+v v v imp question
+Million dollars !!
+qs) for loop is in use
+    we try to alter the orginal set/list/dict
+    alter means - either you add a new element OR you delete 
+    an existing element
+    what happens?
+answer) list - nothing , it will delete
+               but when you append - it is very BAD practice
+               system will CRASH
+        set - you get error
+        RuntimeError: Set changed size during iteration
+        
+        dict - RuntimeError: dictionary changed size during iteration
+        for k,v in lst1.items():
+            print(k,v)
+            if v == 99:
+               lst1.pop(k)

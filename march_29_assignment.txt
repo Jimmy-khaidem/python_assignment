@@ -1,0 +1,43 @@
+March 29th assignment
+======================
+(write functions, call functions, make it return values)
+1. input the principle, rate and time
+   compute the simple interest and amount
+   SI = ( P x T x R ) / 100
+   Amount = SI + P
+   .......
+   should have (say) functions like this
+   input_data()
+   compute_interest()
+   display_amount()
+   display_simple_interest()
+
+2. given to you a prod_dict = 
+            Price  quantity
+              /    /
+   { 1000: (72.55,10), 2000 : (56.25,5), 3000: (25.25,15) }
+   given prod_name = { 1000: 'Toothpaste', 2000 : 'Soap' , 3000 : 'Campor' }
+   the user is asked to enter the prod name
+   and let say the user inputs Soap
+   then display the amount accordingly
+   also display the quantity available
+   ask the user how much to buy ? if the buying qty inputted is 
+   less than or equal to available qty then go ahead with transaction
+   otherwise display 'Asked qty is NOT available'
+   on transaction being successful deduct the qty accordingly and update
+   Keep doing this till the user say - wish to quit ? YES
+
+3. set1 = { 100, 560,220, 565,121, 10, 15}
+   list1 = [890,560,-220, -565, 12,-10 , 14,22,15]
+   process the set1 , pick the element and search in the list1
+   if the element exists in the list1 (either poistive or negative)
+   example say  10 OR -10 then delete it from the list1
+   count how many got deleted.
+   Once the delete count exceeds 4 then STOP otherwise go ahead and process 
+   the set1
+           ****************
+
+
+
+   
+  

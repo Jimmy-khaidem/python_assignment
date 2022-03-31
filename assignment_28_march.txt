@@ -1,0 +1,42 @@
+Assignment 28th March
+=========================
+1) create user defined function to do the following:
+   ask the user the cost price of the article
+   ask the category of the article
+   which could be :-
+    A   then the profit percentage is 8%
+    B   then the profit percentage is 6.5%
+    C   then the profit percentage is 5.5%
+   selling price = cost price + (cost price * profit percentage)
+2) input names till the user types STOP to EXIT
+   add the names to the set
+   if the name inputted already exist then display the 
+   message as the name is already there hence NOT added again
+   process how many names have Kumar or Rao as surname
+   remove the following people name lets say it is provided in a '
+   another set rem_name={'Ashok','Lalit','Pankaj','Anand','Asha','Usha'}
+   how many names were removed from the name set you created
+3) create a dict called prod
+   which has key prod_id and prod_name and price are the values
+   as shown below
+   prod = { 1000: ['Laptop',55000], 2000: ['Mouse',1500],....}
+   add the prod id and the prod details in a list of prod info
+   the flow should be like this
+   enter the prod id?
+   check if the prod id exists?
+   NO not existing - then input the prod name and price and add them to 
+   a list
+   that list is added as the value for the corresponding key in the dict
+   YES - existing - then display the message that the prod id already exists
+   finally when done with adding then find out
+   the follwing details :-
+   prod details - which is the costliest item
+   prod details - which is the cheapest item
+   how many products are above the rate of 12500?
+
+ *******************
+
+
+
+
+   

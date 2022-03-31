@@ -1,0 +1,47 @@
+emp_names=set()
+'''
+1.add
+  till the user does not say STOP-ADDING
+2.view all
+3.view specific name
+  till the user STOP-VIEW
+4.delete specific name
+  till the user STOP-DELETE
+5.modify a specific name Subhash ....Subhash Patil
+  till the user STOP-MODIFY
+6: EXIT out !!
+  Please enter your choice [1 to 6]  
+'''
+while True:
+    print ('1. add ')
+    print ('2. View all ')
+    print ('3. View specifc name ')
+    print ('4. delete specifc name  ')
+    print ('5. Alter a name ')
+    print ('6. STOP -- come out of the MENU ')
+    choice = int(input('Please enter your choice [1 to 6] '))
+    if choice == 6:
+        break
+    if choice == 1:
+        while True:
+            name=input('enter the name to add OR type STOP-ADDING ')
+            if name == 'STOP-ADDING':
+                break
+            else:
+                emp_names.add(name)
+    elif choice == 2:
+        for n in emp_names:
+            print (n,end=' ')
+            print()
+    elif choice == 4:
+        while True:
+            name=input('enter the name to delete OR type STOP-DELETE ')
+            if name == 'STOP-DELETE':
+                break
+            else:
+                if name in emp_names:
+                    emp_names.remove(name)
+                else:
+                    print ('name ',name,' DOES not exist in the set ')
+                
+print ('========thank you for executing this program ========')

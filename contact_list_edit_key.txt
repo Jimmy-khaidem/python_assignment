@@ -1,0 +1,41 @@
+contact_list = { 9551518901:'Deepak Kumar',9551518801:'Anand Kumar'}
+print (contact_list)
+for k,v in contact_list.items():
+    print (k,v)
+'''
+Requirement::
+    Edit a mobile number(KEY) (let the name be as it is)
+   Earlier :: 9966789098   Asha
+   Changed :: 9966789099   Asha
+   edit a key 
+   a) ask the user to enter the existing (OLD) mobile
+      number
+   b) search that number: 9966789098
+      FOUND- display the name --- Asha
+      ask the user what is the modified mobile number
+      9966789099
+      search in the contact-list
+      NOT FOUND : remove 9966789098, add the NEW mobile
+                  number 9966789099 , name is as is (Asha)
+      FOUND :  already the mobile number exist
+               CHECK AGAIN the mobile number which you wish to newly add!!
+
+'''    
+print ('enter the mobile number which you wish to EDIT or TYPE -1 to quit')
+while True:
+    m = int(input('Please enter the mobile number ... '))
+    if m == -1:
+        break
+    if m in contact_list:
+        existing_name = contact_list.get(m)
+        print ('this ',m,' belongs to ',existing_name)
+        new_mob = int(input('enter the new mobile number TO REPALCE this '))
+        if not (new_mob in contact_list):
+            contact_list.pop(m)
+            contact_list.update({new_mob:existing_name})
+        else:
+            print ('CHECK AGAIN the mobile number which you wish to newly add!! belongs to ',contact_list.get(new_mob))
+    else:
+        print ('there is NO SUCH mobile number ',m)
+for k,v in contact_list.items():
+    print (k,v)            
