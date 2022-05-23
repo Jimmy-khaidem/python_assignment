@@ -29,3 +29,18 @@ class Table:
 t=Table()                
 t.display()
 
+# 1. create a file say file1.txt - in notepad 
+#    add about 15 lines in it (copy some text from net)
+#    Write a program to copy the first 10 lines 
+#    to a file file2_10.txt
+#    and the last 5 lines to file3_5.txt
+
+source_file='S:/Aroha_tech/python/python_assignment/file1.txt'
+with open(source_file,'r') as outfile1:
+    lines=outfile1.readlines()
+with open('S:/Aroha_tech/python/python_assignment/file2_10.txt','a') as outfile2:
+    for i in range(10):
+        outfile2.write(lines[i])
+with open('S:/Aroha_tech/python/python_assignment/file3_5.txt','a') as outfile3:
+    for i in range(-5,0):
+        outfile3.write(lines[i])
